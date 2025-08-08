@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".NewGameActivity">
+
+        <TextView
+            android:id="@+id/instructionsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select number of players"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Spinner for selecting the number of players -->
+        <Spinner
+            android:id="@+id/numberOfPlayersSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instructionsTextView"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:entries="@array/number_of_players_options"/>
+
+        <!-- EditText fields for entering player names -->
+        <EditText
+            android:id="@+id/playerName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Player 1"
+            android:layout_below="@id/numberOfPlayersSpinner"
+            android:layout_marginTop="16dp"/>
+        <EditText
+            android:id="@+id/playerName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playerName1"
+            android:layout_marginTop="16dp"
+            android:hint="Player 2" />
+        <EditText
+            android:id="@+id/playerName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playerName2"
+            android:layout_marginTop="16dp"
+            android:hint="Player 3" />
+        <EditText
+            android:id="@+id/playerName4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playerName3"
+            android:layout_marginTop="16dp"
+            android:hint="Player 4" />
+
+        <!-- Add more EditText fields for additional players if needed -->
+
+        <!-- Button to start the game -->
+
+        <Button
+            android:id="@+id/startGameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playerName4"
+            android:layout_marginTop="70dp"
+            android:text="Start Game" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

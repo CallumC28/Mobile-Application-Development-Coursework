@@ -1,0 +1,17 @@
+<!-- themes.xml -->
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ID2101170701" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- Theme without night mode -->
+    <style name="Theme.id2101170701" parent="Base.Theme.ID2101170701">
+        <!-- No additional customizations for this theme -->
+    </style>
+
+</resources>

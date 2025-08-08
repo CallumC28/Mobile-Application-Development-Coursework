@@ -1,0 +1,11 @@
+<!-- res/xml/backup_rules.xml -->
+<full-backup-content>
+    <!-- Include player scores file -->
+    <include domain="file" path="path/to/include/player_scores.xml" />
+
+    <!-- Exclude unnecessary files or directories -->
+    <exclude domain="file" path="path/to/exclude/temporary_files/*" />
+    <exclude domain="file" path="path/to/exclude/logs/*" />
+
+    <!-- Exclude additional data if needed -->
+</full-backup-content>
